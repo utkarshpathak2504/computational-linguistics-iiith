@@ -1,0 +1,36 @@
+.heading
+{
+    text-align: center;
+    padding: 10px;
+}
+body{
+    font-family: "Lucida Grande","Lucida Sans Unicode", "Lucida Sans", Verdana,Arial,sans-serif;
+
+font-size: 13px;
+line-height: 1.22;
+}
+#top
+{
+    padding: 10px;
+    font-size: 25px;
+}
+#p1
+{
+    color: darkblue;
+    font-size: large;
+    text-align: center;
+    font-weight: bold;
+    margin: 10px;
+   
+
+}
+#p2
+{
+    color: blue;
+    font-style: italic;
+    font-size: medium;
+    text-align: center;
+    font-weight: bold;
+    margin: 10px;
+
+}
