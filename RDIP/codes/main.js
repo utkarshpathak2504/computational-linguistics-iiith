@@ -96,6 +96,7 @@ var langEng = false;
 var used = false;
 var call = false;
 
+
 function createTwoBreaks(){
     var br = document.createElement("br");
     br.setAttribute("class","perm");
@@ -177,7 +178,7 @@ function createDynamicString(){
     var i = Math.floor(Math.random()*sentenceList2.length);
     return sentenceList2[i];
  }
- 
+ //random button for generating sentence
    function randomButtonFormation(sentence){
      wordList = sentence.split(' ');
      indexList = new Array();
@@ -206,6 +207,7 @@ function createDynamicString(){
  
      }
    }
+   //clearing the screen on click of buttons
  
    function clearScreenFirst(){
        var btnList = document.getElementsByTagName("button");
@@ -231,7 +233,7 @@ function createDynamicString(){
        document.body.removeChild(breakList[i]);}
      }}
    }
- 
+ // validating sentence
    function validateSentence(){
 if(used == false){
        for(var str in english){
@@ -287,7 +289,7 @@ if(used == false){
  
      }
    }
-
+//checking the correctness of the sentence
    function getCorrectSentence(){
      if(ansFetch == false){ansFetch = true;
       document.getElementById("correctAnsKey").innerHTML = "Hide Answer";}
