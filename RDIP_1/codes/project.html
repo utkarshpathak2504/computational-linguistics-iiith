@@ -4,10 +4,12 @@
 
         <title>week 2</title>
         <script src="project.js"></script>
+        <link rel="stylesheet" type="text/css" href="project.css">
     </head>
     <body>
+        <h2 class="heading">Experiment </h2>
 
-<select  id="Corpus"  onchange="selectCorpus()">
+<select  id="Corpus" class="corp" onchange="selectCorpus()">
 <option value="none">---Select a Corpus---</option>
 <option value="Corpus 1"> Corpus 1</option>
 <option value="Corpus 2" > Corpus 2</option>
@@ -16,10 +18,11 @@
 
 
 </select>
+<br><br>
 <p id="type1"> </p>
 <div id="tableinput" style="visibility: hidden;">
     
-    <p> Enter the number of tokens and types for the above corpus:</p>
+    <p id="type2"> Enter the number of tokens and types for the above corpus:</p>
 
     <table>
         <tr>
@@ -31,7 +34,8 @@
             
         </tr>
     </table>
-<button type="submit" value="submit" onclick="check()">submit </button>
+    <br/>
+<button id="b1" type="submit" value="submit" onclick="check()">submit </button>
 <h2 id="ans"> </h2>
 <h2 id="ans1"></h2>
 </div>

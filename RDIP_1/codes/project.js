@@ -42,7 +42,7 @@ function selectCorpus()
   else if (document.getElementById("Corpus").value=="none")
   {
       alert("Select a Corpus");
-  }
+  } 
   tableinput();
 }
   function tableinput(){
