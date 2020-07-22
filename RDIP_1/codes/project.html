@@ -2,9 +2,8 @@
 <html>
     <head>
 
-        <title>week 2</title>
-        <script src="project.js"></script>
-        <link rel="stylesheet" type="text/css" href="project.css">
+        <title>Unit 4 </title>
+       
     </head>
     <body>
         <h2 class="heading">Experiment </h2>
@@ -23,23 +22,43 @@
 <div id="tableinput" style="visibility: hidden;">
     
     <p id="type2"> Enter the number of tokens and types for the above corpus:</p>
-
+ 
     <table>
         <tr>
-            <td>#type</td><td><input type="text" id="val1"</td>
+            <tr>
+                <td>#tokens: </td><td><input type="text" id="val2"></td>
+                
+            </tr>
+            <td>#types: </td><td><input type="text" id="val1"></td>
 
         </tr>
-        <tr>
-            <td>#token</td><td><input type="text" id="val2"</td>
-            
-        </tr>
-    </table>
+            </table>
     <br/>
-<button id="b1" type="submit" value="submit" onclick="check()">submit </button>
-<h2 id="ans"> </h2>
+<button id="b1" type="submit" value="submit" onclick="check()">submit</button>
+<h2 id="ans"></h2>
 <h2 id="ans1"></h2>
+<button id="b2" type="submit" value="submit" onclick="goahead()" style="visibility: hidden;">Continue</button>
+
+<p id="new" style="visibility: hidden;" >Now, consider all the tokens with the same 'root' word to be of the same type. Recalculate the number of types.</p>
+<p id="box"style="visibility: hidden;">#New types</p>
+<input style="visibility: hidden;"  type="text" id="newtype"><br/><br/>
+<button style="visibility: hidden;"id="b3" type="submit" value="submit" onclick="finalCheck()">submit </button>
+<h2 id="ans2" style="color:green;"></h2>
+<h2 id="ans3" style="color:red;"></h2>
+
+
 </div>
 
 
 
-    </body>
+   
+    <script src="project.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="project.css">
+     
+
+<script src="..\Libraries\node_modules\stemmer\lib\Snowball.min.js"></script>
+<script src="..\Libraries\require.js "></script>
+
+</body>
+</html>
