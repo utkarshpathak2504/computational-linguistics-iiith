@@ -193,12 +193,10 @@ document.getElementById("b2").style.visibility="hidden";
  function stemCall(){
   stemList = [];
   stemUniqueList = [];
-    //var Snowball = require('snowball');
-    //var u = new Set(["of","the","to","up","can","than","did","me","you","off","does","very"]);
+    
    for(var k in typeList){
       
-     // if(u.has(tokenList[k])){
-       // continue;*/
+     
 
         var stemmer = new Snowball('English');
 stemmer.setCurrent(typeList[k].trim().toLowerCase()); 
@@ -209,7 +207,7 @@ stemmer.setCurrent(typeList[k].trim().toLowerCase());
   stemUniqueList = [];
   for(var i in stemList){
 
-    //console.log('main token '+typeList[i]+' '+'index'+' '+i+' '+'stemList'+stemList[i]);
+   
     if(!stemUniqueList.includes(stemList[i]) && !skip.includes(stemList[i])){
         stemUniqueList.push(stemList[i]);}
     else{
